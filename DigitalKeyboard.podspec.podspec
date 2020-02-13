@@ -36,8 +36,8 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+ # spec.license      = "MIT (example)"
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -51,22 +51,13 @@ Pod::Spec.new do |spec|
   #
 
   spec.author             = { "谢泽锋" => "xiezf" }
-  # Or just: spec.author    = "谢泽锋"
-  # spec.authors            = { "谢泽锋" => "xiezf" }
-  # spec.social_media_url   = "https://twitter.com/谢泽锋"
-
-  # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If this Pod runs only on iOS or OS X, then specify the platform and
-  #  the deployment target. You can optionally include the target after the platform.
-  #
 
    spec.platform     = :ios,"8.0"
 
   spec.source       = { :git => "https://github.com/xiezefeng/HDDigitalKeyboard.git", :tag => "1.0.0" }
 
 
-  spec.source_files  = "HDDigitalKeyboard", "*.{h,m}"
+  spec.source_files  = "HDDigitalKeyboard", "HDDigitalKeyboard/*.{h,m}"
 
    spec.requires_arc = true
 
